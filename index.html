@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Montserrat:wght@900&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!--header section-->
+    <header>
+        <div class="left">MangaMagic</div>
+    </header>
+    <!--navigation bar-->
+    <nav>
+        <div class="right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Updates</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section class="firstSection" id="exp">
+            <div class="leftSection">
+                Your Gateway to Manga <span class="purple">Magic</span>
+                <div>Here you can find</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"
+                        onclick="alert('You can send us an email on mangamagic-services@gmail.com')">Mail Us</button>
+                    <button class="btn" onclick="alert('You can also contact us with +91-1234-5678')">Contact</button>
+                </div>
+            </div>
+            <di class="rightSection">
+                <!--image tag-->
+                <img src="luffy.png" alt="my-pic" />
+                </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="exp">
+            <h1>Explore</h1>
+            <div class="mangalists">
+                <h3>Trending</h3>
+                <!--ordered list-->
+                <div class="ordered">
+                    <ol>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100034">
+                            <li>Jujutsu Kaisen</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100017">
+                            <li>My Hero Academia</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100008">
+                            <li>Death Note</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100014">
+                            <li>Haikyu</li>
+                        </a>
+                    </ol>
+                </div>
+                <h3>Other Manga</h3>
+                <!--unordered list-->
+                <div class="unordered">
+                    <ul>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100001">
+                            <li>Assassination Classroom</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100004">
+                            <li>Bleach</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100009">
+                            <li>Demon Slayer</li>
+                        </a>
+                        <a href="https://mangaplus.shueisha.co.jp/titles/100020">
+                            <li>One Piece</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <h1>Updates</h1>
+            <!--anchor tag-->
+            <p>For more updates visit <a href="https://mangaplus.shueisha.co.jp/updates"> this website.</a></p>
+        </section>
+        <!--footer section-->
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>MangaMagic</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Explore</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights">
+                &copy 2023 All Rights Reserved
+            </div>
+        </footer>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <!--typescript-->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['latest manga', 'Updates', 'also get in touch with us!'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
